@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
+
 class mahasiswa {
 private:
 	int nim;
@@ -12,7 +13,12 @@ public:
 	mahasiswa(int iNim, string iNama);
 	void cetak();
 };
+
 mahasiswa::mahasiswa() {
 	nim = 0;
 	nama = "";
+}
+
+mahasiswa::mahasiswa(int iNim) {
+	nim = iNim;
 }
